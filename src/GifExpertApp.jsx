@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Addcategory } from "./components/addcategory";
 
 export const GifExpertApp = () => {
     const [categories, setCategories] = useState([ 'One Piece', 'Metal Gear' ]);
@@ -15,6 +16,7 @@ export const GifExpertApp = () => {
             <h1>Gif Expert App</h1>
 
             {/* Input */}
+            <Addcategory />
 
             {/* Listado de Gif */}
             <button onClick={onAddCategory}>Agregar</button>
